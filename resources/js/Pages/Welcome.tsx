@@ -47,6 +47,8 @@ export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<
                             </nav>
                         </header>
 
+                        <h1 className="text-4xl font-semibold text-black dark:text-white">{import.meta.env.VITE_APP_NAME}</h1>
+
                         <main className="mt-6">
                             <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
                                 <a

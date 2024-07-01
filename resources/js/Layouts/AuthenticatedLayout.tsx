@@ -28,6 +28,8 @@ export default function Authenticated({ user, header, children }: PropsWithChild
                             </div>
                         </div>
 
+                        <h1 className="text-2xl font-semibold text-gray-800">{import.meta.env.VITE_APP_NAME}</h1>
+
                         <div className="hidden sm:flex sm:items-center sm:ms-6">
                             <div className="ms-3 relative">
                                 <Dropdown>
