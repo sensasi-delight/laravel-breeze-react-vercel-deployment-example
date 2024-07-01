@@ -1,6 +1,8 @@
 import { Link, Head } from '@inertiajs/react';
 import { PageProps } from '@/types';
 
+const appName = process.env.APP_NAME || import.meta.env.VITE_APP_NAME || 'Laravel';
+
 export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<{ laravelVersion: string, phpVersion: string }>) {
     const handleImageError = () => {
         document.getElementById('screenshot-container')?.classList.add('!hidden');
@@ -47,7 +49,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<
                             </nav>
                         </header>
 
-                        <h1 className="text-4xl font-semibold text-black dark:text-white">{import.meta.env.VITE_APP_NAME}</h1>
+                        <h1 className="text-4xl font-semibold text-black dark:text-white">{appName}</h1>
 
                         <main className="mt-6">
                             <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
