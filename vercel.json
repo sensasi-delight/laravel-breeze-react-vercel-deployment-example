@@ -21,7 +21,7 @@
     "env": {
         "APP_NAME": "Laravel Breeze React Vercel Deployment Example",
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
+        "APP_DEBUG": "true",
         "APP_URL": "https://laravel-breeze-react-vercel-deployment-example.vercel.app",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
@@ -32,7 +32,7 @@
 
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "array",
+        "SESSION_DRIVER": "cookie",
         "VIEW_COMPILED_PATH": "/tmp/views",
         "SSR_TEMP_PATH": "/tmp/ssr"
     }
