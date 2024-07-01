@@ -35,7 +35,7 @@ return [
     */
 
     'route' => [
-        'prefix' => 'terminal',
+        'prefix' => '_/terminal',
         'as' => 'terminal.',
         'middleware' => ['web'],
     ],
