@@ -1,5 +1,9 @@
 <?php
 
+if(config('app.env') === 'production') {
+    URL::forceScheme('https');
+}
+
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
