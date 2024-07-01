@@ -4,8 +4,15 @@
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.6.2" }
     },
-    "outputDirectory": "public/build",
     "routes": [
+        {
+            "src": "/(favicon.ico|robots.txt)",
+            "dest": "/$1"
+        },
+        {
+            "src": "/build/(.*)",
+            "dest": "/build/$1"
+        },
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
